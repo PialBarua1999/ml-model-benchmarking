@@ -1,0 +1,14 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run ML Benchmark",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "ml_benchmark",
+      "args": ["--output", "results", "--folds", "5", "--repeats", "2"],
+      "console": "integratedTerminal",
+      "justMyCode": true
+    }
+  ]
+}

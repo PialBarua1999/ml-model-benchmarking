@@ -1,0 +1,5 @@
+# Python 3.15.2 intended. Install the actual app with: python -m pip install -e .
+# Keep constraints aligned with pyproject.toml.
+numpy>=2.3,<3
+scikit-learn>=1.9.1,<2
+matplotlib>=3.10,<4

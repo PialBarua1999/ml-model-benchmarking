@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ml-model-benchmarking"
+version = "1.0.0"
+description = "Reproducible, leakage-aware supervised learning benchmarks with an offline dataset"
+readme = "README.md"
+requires-python = ">=3.12,<3.16"
+license = "MIT"
+authors = [{name = "Project Maintainer"}]
+keywords = ["machine-learning", "benchmark", "reproducibility", "scikit-learn", "research"]
+dependencies = [
+  "numpy>=2.3,<3",
+  "scikit-learn>=1.9.1,<2",
+  "matplotlib>=3.10,<4",
+]
+
+[project.scripts]
+ml-benchmark = "ml_benchmark.benchmark:main"
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
